@@ -1,0 +1,3 @@
+Bundle-SymbolicName: angular.poc.portlet
+Bundle-Version: 1.0.0
+Web-ContextPath: /angular-poc
