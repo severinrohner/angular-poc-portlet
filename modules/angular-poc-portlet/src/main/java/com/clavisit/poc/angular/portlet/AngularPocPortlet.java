@@ -1,10 +1,9 @@
 package com.clavisit.poc.angular.portlet;
 
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
+import org.osgi.service.component.annotations.Component;
 
 import javax.portlet.Portlet;
-
-import org.osgi.service.component.annotations.Component;
 
 @Component(
 	immediate = true,
@@ -14,7 +13,7 @@ import org.osgi.service.component.annotations.Component;
 		"com.liferay.portlet.header-portal-javascript=/o/angular-poc/node_modules/core-js/client/shim.min.js",
 		"com.liferay.portlet.header-portal-javascript=/o/angular-poc/node_modules/zone.js/dist/zone.js",
 		"com.liferay.portlet.header-portal-javascript=/o/angular-poc/node_modules/reflect-metadata/Reflect.js",
-		"com.liferay.portlet.header-portal-javascript=/o/angular-poc/node_modules/systemjs/dist/system.src.js,
+		"com.liferay.portlet.header-portal-javascript=/o/angular-poc/node_modules/systemjs/dist/system.src.js",
 		"com.liferay.portlet.header-portlet-javascript=/systemjs.config.js",
 		"javax.portlet.display-name=angular-poc-portlet Portlet",
 		"javax.portlet.init-param.template-path=/",
@@ -25,4 +24,5 @@ import org.osgi.service.component.annotations.Component;
 	service = Portlet.class
 )
 public class AngularPocPortlet extends MVCPortlet {
+
 }
